@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@100&display=swap");
 /* .container-fluid {
   min-height: 100vh;
   max-height: 100vh;
@@ -9,7 +11,44 @@
   background-size: cover;
   height: 50vh;
 } */
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+body {
+  display: flex;
+  flex-direction: row;
+}
+.row {
+  justify-content: space-around;
+  padding: 20px 20px 20px 20px;
+}
+.flexbox {
+  background-image: url(/frontend/Image/HELLO\ BORROWER.jpg);
+  background-size: cover;
+  min-width: 400px;
+}
+.flexbox h1 {
+  padding-top: 80px;
+  color: white;
+  font-family: "Rubik Dirt", cursive;
+  text-align: center;
+  background-color: transparent;
+}
+.flexbox1 {
+  width: 1000px;
+}
 
+.flexcontainer h3 {
+  font-family: "Archivo", sans-serif;
+  text-align: center;
+  color: #f0f0f0;
+}
+.borrower-box {
+  background-image: url("/frontend/Image/HELLO\ BORROWER.jpg");
+  display: flex;
+}
 h1 {
   font-size: 50px !important;
   background: rgba(0, 0, 0, 0.8);
@@ -28,8 +67,7 @@ h4 {
 }
 
 .login-area {
-  background-color: #fff;
-  /* height: 100vh; */
+  background-color: rgb(255, 255, 255);
 }
 
 .input-group-text i {
@@ -82,34 +120,15 @@ form {
 }
 
 .table {
+  background-color: rgba(34, 33, 33, 0.932);
+  list-style-type: none;
   margin-top: 5vh;
   width: 100%;
   border-spacing: 0;
   text-align: left;
 }
-.table th {
-  font-weight: 300;
-  font-size: 16px;
-  color: #fff;
-  line-height: 26px;
-  padding: 18px 30px;
-}
-.table thead tr {
-  background: #2b2d32;
-}
-.table td {
-  padding: 30px 30px 31px;
-  font-weight: 300;
-  font-size: 16px;
-  color: black-2;
-  line-height: 26px;
-  text-transform: uppercase;
-}
-.table tbody tr:nth-child(odd) {
-  background: white;
-}
-.table tbody tr:nth-child(even) {
-  background: #f8fbfc;
+tr {
+  color: #f0f0f0;
 }
 .table__wrapper {
   padding-top: 40px;
