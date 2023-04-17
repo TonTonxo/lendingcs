@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Calistoga&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 @font-face {
   font-family: Agrandir;
   src: url(/frontend/Fonts/Agrandir-GrandHeavy.otf);
@@ -19,14 +20,26 @@ html,
 body {
   width: 100vw;
   height: 100vh;
+  background-image: url(/frontend/Image/DESIGN\ 1\ LENDER\ 4.png);
 }
+
+.BorrowerBG {
+  background-image: url(/frontend/Image/DESIGN\ 1\ BORROWER.png);
+}
+
 body {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 .row {
-  justify-content: space-around;
+  justify-content: left;
   padding: 20px 20px 20px 20px;
+}
+
+.row-container {
+  display: flex;
+  flex-direction: row;
 }
 
 .row-lender {
@@ -34,6 +47,13 @@ body {
 }
 .row-adjustment {
   padding-top: 50px;
+}
+
+.note-style {
+  color: white;
+  justify-content: center;
+  padding-left: 20px;
+  margin-top: 30px;
 }
 
 .flex-container {
@@ -48,7 +68,6 @@ body {
   min-width: 300px;
 }
 .flexbox1 {
-  background-image: url(/frontend/Image/HELLO\ LENDER.jpg);
   background-size: cover;
   min-width: 400px !important;
 }
@@ -76,6 +95,11 @@ body {
   background-color: transparent;
 }
 
+.flexcontainer {
+  text-align: left;
+  margin-top: 80px;
+}
+
 .flexcontainer h3 {
   font-family: "Archivo", sans-serif;
   text-align: center;
@@ -87,9 +111,27 @@ body {
 }
 
 .form-design1 {
-  background-color: black;
   width: 60vw;
   height: 80vh;
+}
+
+.giveLoan {
+  text-align: center;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  text-align: start;
+  margin-left: -280px;
+  padding-top: 5px;
+}
+
+.logo,
+h1 {
+  color: white;
+  text-align: center;
+  padding-top: 40px;
 }
 
 h3 {
@@ -99,12 +141,18 @@ h3 {
 }
 
 h4 {
-  font-family: "Calistoga", cursive;
-  font-size: 35px !important;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 40px;
+  font-size: 25px !important;
 }
 
 .login-area {
-  background-color: rgb(255, 255, 255);
+  border-radius: 25px;
+  background-color: rgb(228, 227, 227);
+}
+
+.borrower-login {
+  margin-left: 50px;
 }
 
 .input-group-text i {
@@ -146,11 +194,12 @@ form {
 
 .lender-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .container-fluid {
+  justify-content: center;
   padding-left: 0 !important;
 }
 
@@ -160,12 +209,6 @@ form {
   background-size: cover;
   min-width: 400px !important;
   min-height: 800px;
-}
-
-.flexbox3 {
-  background-image: url(/frontend/Image/LENDER\ TRANSACTION\ HISTORY.jpg) !important;
-  background-size: cover;
-  min-width: 400px !important;
 }
 
 .flexbox3 span {
@@ -219,15 +262,15 @@ form {
 
 .verify-container {
   display: flex !important;
-  flex-direction: row !important;
-  justify-content: space-around !important;
+  flex-direction: column !important;
+  margin-top: 60px;
 }
 
-.verify-content {
+/* .verify-content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
-}
+} */
 
 .verify-text-container {
   padding-top: 40px;
@@ -236,7 +279,6 @@ form {
 .verify-text {
   padding-top: 20px;
   padding-bottom: 10px;
-  background-color: black;
   min-width: 73vw;
 }
 
@@ -273,6 +315,15 @@ form {
   width: 100%;
   border-spacing: 0;
   text-align: left;
+}
+
+.lender-table {
+  justify-content: center;
+  width: 70%;
+  margin-left: 15%;
+  border-radius: 25px;
+  background-color: rgb(228, 227, 227);
+  margin-top: -5vh;
 }
 .table-lender th {
   padding: 10 10 10 10;

@@ -38,17 +38,10 @@
     ></script>
   </head>
 
-  <body>
-    <div class="flexbox">
-      <h1>HELLO BORROWER</h1>
-    </div>
-    <div
-      class="container-fluid"
-      style="flex-direction: column; padding-top: 30px"
-    >
-      <div class="flexcontainer" style="background-color: rgb(0, 0, 0)">
-        <h3>PLEASE ENTER DETAILS SEEK LOAN</h3>
-        <div class="row">
+  <body class="BorrowerBG">
+    <div class="container-fluid">
+      <div class="flexcontainer">
+        <div class="row-container">
           <!-- <div class="col-md-12 bg-login">
             <img src="" alt="" />
             <div class="content">
@@ -58,12 +51,13 @@
             </div>
           </div> -->
 
-          <div class="col-md-5 login-area">
+          <div class="col-md-5 login-area borrower-login">
+            <h3 style="padding-top: 30px; color: black">
+              PLEASE ENTER DETAILS SEEK LOAN
+            </h3>
             <form>
               <div class="form-group">
-                <div class="form-group">
-                  <p class="nav-item ml-auto">Account no.</p>
-                </div>
+                <div class="form-group"></div>
                 <div class="input-group mb-3">
                   <div class="input-group-prepend">
                     <span class="input-group-text" id="basic-addon1">
@@ -82,9 +76,7 @@
                   />
                 </div>
               </div>
-              <div class="form-group">
-                <p class="nav-item ml-auto">Loan Amount</p>
-              </div>
+              <div class="form-group"></div>
               <div class="form-group">
                 <div class="input-group mb-3">
                   <div class="input-group-prepend">
@@ -103,9 +95,7 @@
                   />
                 </div>
               </div>
-              <div class="form-group">
-                <p class="nav-item ml-auto">Due Date</p>
-              </div>
+              <div class="form-group"></div>
               <div class="form-group">
                 <div class="input-group mb-3">
                   <div class="input-group-prepend">
@@ -157,6 +147,23 @@
               </div>
             </form>
           </div>
+          <div class="note-style">
+            <h2>NOTE</h2>
+            <p>
+              Please be aware that borrowing money through a peer-to-peer
+              lending system comes with risks. You should carefully consider
+              your ability to repay the loan before accepting any funds. Failure
+              to repay the loan according to the agreed-upon terms may result in
+              legal action, damage to your credit score, and other negative
+              consequences. Additionally, the interest rates and fees associated
+              with peer-to-peer lending may be higher than traditional lending
+              sources, which could make it more difficult to repay the loan.
+              Before accepting any funds through a peer-to-peer lending system,
+              please read and understand the platform's terms and conditions,
+              and consider seeking advice from a financial advisor or credit
+              counselor.
+            </p>
+          </div>
         </div>
       </div>
       <div class="col-md-12">
@@ -171,21 +178,7 @@
               <th>Status</th>
             </tr>
           </thead>
-          <tbody>
-            <!-- <tr>
-              <td data-label="Lender Address">
-                0x2187c0284267aB64751E49F04B817e5c5ddab9dF
-              </td>
-              <td data-label="Amount">20,000</td>
-              <td data-label="Interest">15%</td>
-              <td data-label="">
-                <a href="#" class="btn btn__active">Get Loan</a>
-              </td>
-              <td data-label="">
-                <a href="#" class="btn btn__active">Repay Loan</a>
-              </td>
-            </tr> -->
-          </tbody>
+          <tbody></tbody>
         </table>
       </div>
     </div>
